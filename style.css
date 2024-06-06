@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: linear-gradient(#01e26e, #72ffb4); */
+    background: linear-gradient(#00308F,#7CB9E8);
+}
+
+h1{
+    padding: 20px 0 20px 0;
+    color: white;
+}
+
+.container{
+    background-color: white;
+    width: 30vw;
+    max-width: 700px;
+    min-width: 400px;
+    /* max-height: 85vh; */
+    height: 100%;
+    padding: 60px 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+}
+
+/* Principal section */
+
+.principal-section{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.principal-section label{
+    display: block;
+    font-weight: 600;
+}
+
+.principal-section input{
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border-bottom: 2px solid #585858;
+}
+
+.principal-section input:focus{
+    outline: none;
+    border-bottom: 2px solid #585858;
+}
+
+/* Rate section */
+
+.rate-section{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.rate-section label{
+    display: block;
+    font-weight: 600;
+}
+
+.rate-section input{
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border-bottom: 2px solid #585858;
+}
+
+.rate-section input:focus{
+    outline: none;
+    border-bottom: 2px solid #585858;
+}
+
+/* Tenure section */
+
+.tenure-section{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.tenure-section label{
+    display: block;
+    font-weight: 600;
+}
+
+.tenure-section input{
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border-bottom: 2px solid #585858;
+}
+
+.tenure-section input:focus{
+    outline: none;
+    border-bottom: 2px solid #585858;
+}
+
+/* Submit button */
+
+.calculate-btn{
+    /* background-color: #01e26e; */
+    background-color: #007FFF;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 30px auto 0 auto;
+}
+
+.calculate-btn:hover{
+    background-color: #0080ffd3;
+}
+
+#result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    gap: 5px;
+    background-color: #7CB9E8;
+    padding: 15px;
+    color: #585858;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+#result span{
+    color: black;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1496px) {
+    body{
+        background: linear-gradient(#00308F,#7CB9E8);
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    .container{
+        padding: 50px 30px;
+    }
+
+    .principal-section{
+        font-size: 1.2rem;
+    }
+
+    .principal-section input{
+        font-size: 1.2rem;
+    }
+
+    .rate-section{
+        font-size: 1.2rem;
+    }
+
+    .rate-section input{
+        font-size: 1.2rem;
+    }
+
+    .tenure-section{
+        font-size: 1.2rem;
+    }
+
+    .tenure-section input{
+        font-size: 1.2rem;
+    }
+
+    .calculate-btn{
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+
+    #result{
+        margin-top: 20px;
+        font-size: 1rem;
+        gap: 5px;
+        padding: 15px;
+    }
+}
